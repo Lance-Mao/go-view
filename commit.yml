@@ -2,28 +2,10 @@
 branches: {
   }
 fileChange:
-  /src:
-    newFile: !uuid '0cd3eb96de035ec3861588c7d1cdc8ad44c752df'
-    oldFile: !uuid 'f692cd3b3290c0883f30d9475cc709343fac96b3'
-  /src/packages:
-    newFile: !uuid 'a912fd53feaabef1d50d6defba3c76c333259852'
-    oldFile: !uuid '10060a9e2a46cd926e8d898b55fc3feec625582a'
-  /src/packages/components:
-    newFile: !uuid 'f9d3dcb64b9fa219da46d11737c6366109befac1'
-    oldFile: !uuid '2ce89b4d66c5fead0b805355c9c6c7962ba37135'
-  /src/packages/components/Charts:
-    newFile: !uuid '3152df7504facc0fadb3dbe8226bb21897a0055a'
-    oldFile: !uuid '464233ba40931a4a031ecfeb17c472313bbbf7d0'
-  /src/packages/components/Charts/Maps:
-    newFile: !uuid '500dbdbf631e7eb6bae3ba1c303c3c4ee690fb29'
-    oldFile: !uuid '43628045394b33f7008ffa4a2b9a2d7838e3fe8f'
-  /src/packages/components/Charts/Maps/MapAmap:
-    newFile: !uuid '956bda0cbb7b874505983a13c1afd583a7a3382c'
-    oldFile: !uuid 'fccf274699a6b5a0d4e340d3ff6642a7aedd6e1e'
-  /src/packages/components/Charts/Maps/MapAmap/config.ts:
-    newFile: !uuid '0b2b491f64ea89e9d0e1f2939e58e435e44db181'
-    oldFile: !uuid 'c730fb286a781395df54ec44d9484bec4be1fbb3'
-gitCommitId: !uuid '911e60b1fbe53e476ad0b0790283f0498f0fb9c3'
+  /README.md:
+    newFile: !uuid '4eade9ea1657b1db1878e9684a094a12b9bd5f12'
+    oldFile: !uuid 'a50eacbdfdc1079b244c6f6a20e6926f195f97bf'
+gitCommitId: !uuid '686541275517a27a6f327a2a97bb37ec9bb714f1'
 renames: {
   }
-revisionId: 1463
+revisionId: 1464
