@@ -2,13 +2,43 @@
 branches: {
   }
 fileChange:
+  /README.md:
+    newFile: !uuid '95cd486a83cdaeaff8daf606db3ce224b7451fe6'
+    oldFile: !uuid 'c8d9504eb5c85e422a71a989afc85853a5f60dff'
   /readme:
-    newFile: !uuid '67561bc4e684d80bae683372839f132cc3096339'
-    oldFile: !uuid '3588b0d354445115ea27e0229880ceadb4b7cb84'
+    newFile: !uuid '6bc06a3a46f8de599ea699024b916497581a9990'
+    oldFile: !uuid '67561bc4e684d80bae683372839f132cc3096339'
   /readme/go-view-gitee-2025-100.png:
-    newFile: !uuid 'cb2d88c9bfb712ba34a418ee820f9864b41fd0e0'
-    oldFile: !uuid 'c3fd4ab28a9280f659fecbba3e7bdfc895c20819'
-gitCommitId: !uuid '00a1a588239d5ac3d2ddcd46b583f412f919e3eb'
+    newFile: null
+    oldFile: !uuid 'cb2d88c9bfb712ba34a418ee820f9864b41fd0e0'
+  /readme/sponsors:
+    newFile: !uuid '7d37c5b45947632bbf45815b693ef193fa46ab85'
+    oldFile: !uuid '985d1636540d77c075cfae06d8371ec76f25be1f'
+  /readme/sponsors/dandian-banner.png:
+    newFile: null
+    oldFile: !uuid '77b8a4a6c0052e61d3998c8750fbf456949d6782'
+  /readme/sponsors/diboot-banner.png:
+    newFile: null
+    oldFile: !uuid '7e83f45c3e326a9586bd20b5008b6707ddaba6cb'
+  /readme/sponsors/qyy-banner.png:
+    newFile: null
+    oldFile: !uuid 'f2d376577a4e144c0c10d673e4cd84735809f81e'
+  /readme/sponsors/shaguo-banner.png:
+    newFile: null
+    oldFile: !uuid '08465235d2e8bb7f19b567474e4699c36d4fd310'
+  /readme/sponsors/xingyun-banner.png:
+    newFile: null
+    oldFile: !uuid 'f446a7d97035626f4a8b02a0d64b2afba8a946f1'
+  /readme/sponsors/yingchuang-banner.png:
+    newFile: !uuid '5dc59614fca27c339fbe9b68304a7d836d5839f8'
+    oldFile: null
+  /readme/sponsors/yuncheng-banner.png:
+    newFile: null
+    oldFile: !uuid '7da1cf6fadb2771d245294167d5ee53535bd48f5'
+  /readme/sponsors/zyplayer-banner.png:
+    newFile: null
+    oldFile: !uuid 'bfc0ff8cfd979924caf838a430dd8f4bb68261a4'
+gitCommitId: !uuid '8e7f9fcda02dfed86493f77a9126c2a388c40a8c'
 renames: {
   }
-revisionId: 1466
+revisionId: 1467
