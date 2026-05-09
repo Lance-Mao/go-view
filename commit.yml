@@ -3,45 +3,33 @@ branches: {
   }
 fileChange:
   /src:
-    newFile: !uuid 'e6d94a4eee3c1e9272c475064b2b8944e97237d0'
-    oldFile: !uuid '0cd3eb96de035ec3861588c7d1cdc8ad44c752df'
+    newFile: !uuid '45a9dd2f1d5e73cd94a3ad6f9c59a7ead98f2c50'
+    oldFile: !uuid 'e6d94a4eee3c1e9272c475064b2b8944e97237d0'
   /src/assets:
-    newFile: !uuid 'b4b67d6ec5e089216d65ea57f2482ec93a61f3a8'
-    oldFile: !uuid '6f30508f8346ee149c2493774c552e8ca40a0cf4'
+    newFile: !uuid 'aca7ce35a30dfcb2a58de4d132eb2da577c53f3b'
+    oldFile: !uuid 'b4b67d6ec5e089216d65ea57f2482ec93a61f3a8'
   /src/assets/images:
-    newFile: !uuid '34023b94153072da9c84c224926d42f0a50797b7'
-    oldFile: !uuid '50f62bbae41351e38c7b79fc9528190883bf3baf'
+    newFile: !uuid '636fe86b0f1437966af48d358247f9e22224d875'
+    oldFile: !uuid '34023b94153072da9c84c224926d42f0a50797b7'
   /src/assets/images/tips:
-    newFile: !uuid '88b54cea0c7054909103772bd8499b89bcbc7758'
-    oldFile: !uuid 'ea14f2fa365fdec28a9ceaf9b8369977ab07c97b'
-  /src/assets/images/tips/go-view-pro-ai.png:
-    newFile: !uuid 'bb6472ce05af8f928bf3a258db32aa934150c566'
+    newFile: !uuid '268f3b5f370d83caa336cc0b0ab376782b736fd7'
+    oldFile: !uuid '88b54cea0c7054909103772bd8499b89bcbc7758'
+  /src/assets/images/tips/go-view-flow.png:
+    newFile: !uuid 'bedc1f03643ee90abd731f6ac1e67c1683ada03b'
     oldFile: null
   /src/components:
-    newFile: !uuid 'e8b0c10025e698a03206cc00fb888e97cf43dcd4'
-    oldFile: !uuid '37af4474c4071c7da1d0ac8fc3e6c27ee655ed78'
+    newFile: !uuid 'ca9a8c779ae61f60c91e36968a53a26ba9a8932a'
+    oldFile: !uuid 'e8b0c10025e698a03206cc00fb888e97cf43dcd4'
   /src/components/Tips:
-    newFile: !uuid 'b2af4ce305b5971a1056cce67aefdd29cad098db'
-    oldFile: !uuid 'c932bc18ef5f20945441b37a741eac22e454eb6f'
+    newFile: !uuid '59ce28bdaded077f60725c3b8a2ad87707b42d8b'
+    oldFile: !uuid 'b2af4ce305b5971a1056cce67aefdd29cad098db'
   /src/components/Tips/GoViewProAI:
-    newFile: !uuid '6be6d3683fdc0f0bf1f63bcb5157c1e2f07d3f18'
-    oldFile: null
-  /src/components/Tips/GoViewProAI/index.ts:
-    newFile: !uuid 'ea3bf0730fd1fbfef44522be623df3a9c708058d'
-    oldFile: null
+    newFile: !uuid '38884c153fcfcc897c885b5038fe28eac78f30eb'
+    oldFile: !uuid '6be6d3683fdc0f0bf1f63bcb5157c1e2f07d3f18'
   /src/components/Tips/GoViewProAI/index.vue:
-    newFile: !uuid '0d63b08ad103927a117836e816655541dce594f4'
-    oldFile: null
-  /src/views:
-    newFile: !uuid '39ed9d41ac273703744e9b579fe8d5c2ea9015b8'
-    oldFile: !uuid 'a2e714755178c589bd0a572d953faae256ae5f18'
-  /src/views/login:
-    newFile: !uuid 'dbbb90a8be0d520600fb37cb3d0c08176813308f'
-    oldFile: !uuid 'e858b8c8eeaba7127369810423d4709ead72e8c2'
-  /src/views/login/index.vue:
-    newFile: !uuid '5406cc63c6977b6009e8b7ad3c44ca2c3ed5e3d6'
-    oldFile: !uuid 'e818f4fe563a6c7e31281ad7552f31cd8d6c5d45'
-gitCommitId: !uuid '28d3082daa4a91d2c50c9d6b2ef9a45ef413ee5c'
+    newFile: !uuid 'ed3706cf98aa3eb256fb8ee0fe0e53939b7bc4c2'
+    oldFile: !uuid '0d63b08ad103927a117836e816655541dce594f4'
+gitCommitId: !uuid '09b60abb66bcc64370aba3f455ba0939a982e3d4'
 renames: {
   }
-revisionId: 1470
+revisionId: 1471
