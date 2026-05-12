@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, PropType, onMounted, watch, ref } from 'vue'
+import { computed, PropType, onMounted, watch } from 'vue'
 import VChart from 'vue-echarts'
 import { useCanvasInitOptions } from '@/hooks/useCanvasInitOptions.hook'
 import { use } from 'echarts/core'
