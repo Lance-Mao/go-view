@@ -2,34 +2,10 @@
 branches: {
   }
 fileChange:
-  /src:
-    newFile: !uuid '45a9dd2f1d5e73cd94a3ad6f9c59a7ead98f2c50'
-    oldFile: !uuid 'e6d94a4eee3c1e9272c475064b2b8944e97237d0'
-  /src/assets:
-    newFile: !uuid 'aca7ce35a30dfcb2a58de4d132eb2da577c53f3b'
-    oldFile: !uuid 'b4b67d6ec5e089216d65ea57f2482ec93a61f3a8'
-  /src/assets/images:
-    newFile: !uuid '636fe86b0f1437966af48d358247f9e22224d875'
-    oldFile: !uuid '34023b94153072da9c84c224926d42f0a50797b7'
-  /src/assets/images/tips:
-    newFile: !uuid '268f3b5f370d83caa336cc0b0ab376782b736fd7'
-    oldFile: !uuid '88b54cea0c7054909103772bd8499b89bcbc7758'
-  /src/assets/images/tips/go-view-flow.png:
-    newFile: !uuid 'bedc1f03643ee90abd731f6ac1e67c1683ada03b'
-    oldFile: null
-  /src/components:
-    newFile: !uuid 'ca9a8c779ae61f60c91e36968a53a26ba9a8932a'
-    oldFile: !uuid 'e8b0c10025e698a03206cc00fb888e97cf43dcd4'
-  /src/components/Tips:
-    newFile: !uuid '59ce28bdaded077f60725c3b8a2ad87707b42d8b'
-    oldFile: !uuid 'b2af4ce305b5971a1056cce67aefdd29cad098db'
-  /src/components/Tips/GoViewProAI:
-    newFile: !uuid '38884c153fcfcc897c885b5038fe28eac78f30eb'
-    oldFile: !uuid '6be6d3683fdc0f0bf1f63bcb5157c1e2f07d3f18'
-  /src/components/Tips/GoViewProAI/index.vue:
-    newFile: !uuid 'ed3706cf98aa3eb256fb8ee0fe0e53939b7bc4c2'
-    oldFile: !uuid '0d63b08ad103927a117836e816655541dce594f4'
-gitCommitId: !uuid '09b60abb66bcc64370aba3f455ba0939a982e3d4'
+  /README.md:
+    newFile: !uuid 'ac4e70e7275a588c25a1a051fac3919dc2d3fc95'
+    oldFile: !uuid '92601f100d821ef8fee4c50e9765597492f5c14f'
+gitCommitId: !uuid 'e9fc946fd6ea585bba26b13961f256305dfbbab9'
 renames: {
   }
-revisionId: 1471
+revisionId: 1472
