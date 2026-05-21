@@ -1,5 +1,5 @@
 <template>
-  <div class="go-shape-box" :class="{ lock, hide }">
+  <div class="go-shape-box" :class="{ lock, hide }" :style="positionStyle">
     <slot></slot>
     <!-- 锚点 -->
     <template v-if="!hiddenPoint">
@@ -38,6 +38,10 @@ const props = defineProps({
   hiddenPoint: {
     type: Boolean,
     required: false
+  },
+  index: {
+    type: Number,
+    default: 0
   }
 })
 
@@ -79,6 +83,17 @@ const lock = computed(() => {
 // 隐藏
 const hide = computed(() => {
   return props.item.status.hide
+})
+
+// 位置样式
+const positionStyle = computed(() => {
+  const attr = props.item?.attr
+  if (!attr) return {}
+  return {
+    zIndex: props.index + 1,
+    left: `${attr.x}px`,
+    top: `${attr.y}px`
+  }
 })
 </script>
 

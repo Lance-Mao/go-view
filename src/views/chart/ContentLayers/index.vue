@@ -65,7 +65,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import Draggable from 'vuedraggable'
-import cloneDeep from 'lodash/cloneDeep'
 import { ContentBox } from '../ContentBox/index'
 import { useChartLayoutStore } from '@/store/modules/chartLayoutStore/chartLayoutStore'
 import { ChartLayoutStoreEnum, LayerModeEnum } from '@/store/modules/chartLayoutStore/chartLayoutStore.d'
@@ -96,7 +95,7 @@ const layerMode = ref<LayerModeEnum>(chartLayoutStore.getLayerType)
 
 // 逆序展示
 const reverseList = computed(() => {
-  const list: Array<CreateComponentType | CreateComponentGroupType> = cloneDeep(chartEditStore.getComponentList)
+  const list: Array<CreateComponentType | CreateComponentGroupType> = [...chartEditStore.getComponentList]
   return list.reverse()
 })
 
