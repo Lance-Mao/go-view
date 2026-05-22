@@ -8,7 +8,6 @@
       :hiddenPoint="true"
       :class="animationsClass(groupData.styles.animations)"
       :style="{
-        ...useComponentStyle(groupData.attr, groupIndex),
         ...useSizeStyle(groupData.attr),
         ...getFilterStyle(groupData.styles),
         ...getTransformStyle(groupData.styles),
@@ -28,9 +27,6 @@
         :index="groupIndex"
         :item="item"
         :hiddenPoint="true"
-        :style="{
-          ...useComponentStyle(item.attr, groupIndex)
-        }"
       >
         <component
           class="edit-content-chart"
@@ -60,7 +56,7 @@ import { animationsClass, getFilterStyle, getTransformStyle, getBlendModeStyle, 
 import { useChartEditStore } from '@/store/modules/chartEditStore/chartEditStore'
 import { useContextMenu, divider } from '@/views/chart/hooks/useContextMenu.hook'
 import { useMouseHandle } from '../../hooks/useDrag.hook'
-import { useComponentStyle, useSizeStyle } from '../../hooks/useStyle.hook'
+import { useSizeStyle } from '../../hooks/useStyle.hook'
 import { EditShapeBox } from '../../components/EditShapeBox'
 
 const props = defineProps({
