@@ -39,7 +39,6 @@
                 :data-id="item.id"
                 :index="index"
                 :style="{
-                  ...useComponentStyle(item.attr, index),
                   ...(getBlendModeStyle(item.styles) as any),
                 }"
                 :item="item"
@@ -106,7 +105,7 @@ import { useLayout } from './hooks/useLayout.hook'
 import { useAddKeyboard } from '../hooks/useKeyboard.hook'
 import { useSync } from '../hooks/useSync.hook'
 import { dragHandle, dragoverHandle, mousedownHandleUnStop, useMouseHandle } from './hooks/useDrag.hook'
-import { useComponentStyle, useSizeStyle } from './hooks/useStyle.hook'
+import { useSizeStyle } from './hooks/useStyle.hook'
 import { useInitVChartsTheme } from '@/hooks'
 
 import { ContentBox } from '../ContentBox/index'
