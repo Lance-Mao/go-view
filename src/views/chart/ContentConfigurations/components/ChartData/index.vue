@@ -46,8 +46,8 @@ const selectOptions: SelectCreateDataType[] = [
 // 无数据源
 const isNotData = computed(() => {
   return (
-    targetData.value.chartConfig?.chartFrame === ChartFrameEnum.STATIC ||
-    typeof targetData.value?.option?.dataset === 'undefined'
+    targetData.value.chartConfig?.chartFrame === ChartFrameEnum.STATIC &&
+    !targetData.value?.option?.hasOwnProperty('dataset')
   )
 })
 </script>
