@@ -1,6 +1,10 @@
 import { getUUID } from '@/utils'
 import { useChartEditStore } from '@/store/modules/chartEditStore/chartEditStore'
-import { ChartEditStoreEnum, ChartEditStorage } from '@/store/modules/chartEditStore/chartEditStore.d'
+import {
+  ChartEditStoreEnum,
+  ChartEditStorage,
+  EditCanvasConfigEnum
+} from '@/store/modules/chartEditStore/chartEditStore.d'
 import { useChartHistoryStore } from '@/store/modules/chartHistoryStore/chartHistoryStore'
 import { useChartLayoutStore } from '@/store/modules/chartLayoutStore/chartLayoutStore'
 import { ChartLayoutStoreEnum } from '@/store/modules/chartLayoutStore/chartLayoutStore.d'
@@ -107,6 +111,20 @@ export const useSync = () => {
     // 画布补丁处理
     projectData.editCanvasConfig = canvasVersionUpdatePolyfill(projectData.editCanvasConfig)
 
+    if (projectData.editCanvasConfig[EditCanvasConfigEnum.WIDTH]) {
+      chartEditStore.setEditCanvasConfig(
+        EditCanvasConfigEnum.WIDTH,
+        projectData.editCanvasConfig[EditCanvasConfigEnum.WIDTH]
+      )
+    }
+
+    if (projectData.editCanvasConfig[EditCanvasConfigEnum.HEIGHT]) {
+      chartEditStore.setEditCanvasConfig(
+        EditCanvasConfigEnum.HEIGHT,
+        projectData.editCanvasConfig[EditCanvasConfigEnum.HEIGHT]
+      )
+    }
+    chartEditStore.computedScale()
     // 列表组件注册
     projectData.componentList.forEach(async (e: CreateComponentType | CreateComponentGroupType) => {
       const intComponent = (target: CreateComponentType) => {
