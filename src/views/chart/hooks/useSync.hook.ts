@@ -2,7 +2,11 @@ import { onUnmounted } from 'vue';
 import html2canvas from 'html2canvas'
 import { getUUID, httpErrorHandle, fetchRouteParamsLocation, base64toFile, JSONStringify, JSONParse } from '@/utils'
 import { useChartEditStore } from '@/store/modules/chartEditStore/chartEditStore'
-import { EditCanvasTypeEnum, ChartEditStoreEnum, ProjectInfoEnum, ChartEditStorage } from '@/store/modules/chartEditStore/chartEditStore.d'
+import { EditCanvasTypeEnum,
+  ChartEditStoreEnum, ProjectInfoEnum,
+  ChartEditStorage,
+  EditCanvasConfigEnum
+} from '@/store/modules/chartEditStore/chartEditStore.d'
 import { useChartHistoryStore } from '@/store/modules/chartHistoryStore/chartHistoryStore'
 import { StylesSetting } from '@/components/Pages/ChartItemSetting'
 import { useSystemStore } from '@/store/modules/systemStore/systemStore'
@@ -120,6 +124,20 @@ export const useSync = () => {
     // 画布补丁处理
     projectData.editCanvasConfig = canvasVersionUpdatePolyfill(projectData.editCanvasConfig)
 
+    if (projectData.editCanvasConfig[EditCanvasConfigEnum.WIDTH]) {
+      chartEditStore.setEditCanvasConfig(
+        EditCanvasConfigEnum.WIDTH,
+        projectData.editCanvasConfig[EditCanvasConfigEnum.WIDTH]
+      )
+    }
+
+    if (projectData.editCanvasConfig[EditCanvasConfigEnum.HEIGHT]) {
+      chartEditStore.setEditCanvasConfig(
+        EditCanvasConfigEnum.HEIGHT,
+        projectData.editCanvasConfig[EditCanvasConfigEnum.HEIGHT]
+      )
+    }
+    chartEditStore.computedScale()
     // 列表组件注册
     projectData.componentList.forEach(async (e: CreateComponentType | CreateComponentGroupType) => {
       const intComponent = (target: CreateComponentType) => {
