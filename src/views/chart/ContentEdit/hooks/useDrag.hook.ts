@@ -308,15 +308,23 @@ const _runAlignSnap = (
 
   if (bestX) {
     const { y: ry, h: rh } = bestX.ref.attr
-    const spanStart = Math.min(finalY, ry)
-    const spanEnd = Math.max(finalY + sh, ry + rh)
-    _drawAlignLine(container, false, bestX.coord, spanStart, spanEnd, `${Math.round(bestX.delta)}px`, color)
+    // 两组件在 Y 方向上最近的两条边（间隙区域）
+    const highBottom = Math.min(finalY + sh, ry + rh)
+    const lowTop = Math.max(finalY, ry)
+    const spanStart = Math.min(highBottom, lowTop)
+    const spanEnd = Math.max(highBottom, lowTop)
+    const gapDist = Math.max(0, lowTop - highBottom)
+    _drawAlignLine(container, false, bestX.coord, spanStart, spanEnd, `${Math.round(gapDist)}px`, color)
   }
   if (bestY) {
     const { x: rx, w: rw } = bestY.ref.attr
-    const spanStart = Math.min(finalX, rx)
-    const spanEnd = Math.max(finalX + sw, rx + rw)
-    _drawAlignLine(container, true, bestY.coord, spanStart, spanEnd, `${Math.round(bestY.delta)}px`, color)
+    // 两组件在 X 方向上最近的两条边（间隙区域）
+    const leftRight = Math.min(finalX + sw, rx + rw)
+    const rightLeft = Math.max(finalX, rx)
+    const spanStart = Math.min(leftRight, rightLeft)
+    const spanEnd = Math.max(leftRight, rightLeft)
+    const gapDist = Math.max(0, rightLeft - leftRight)
+    _drawAlignLine(container, true, bestY.coord, spanStart, spanEnd, `${Math.round(gapDist)}px`, color)
   }
 
   return { x: finalX, y: finalY }
