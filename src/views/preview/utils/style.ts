@@ -51,6 +51,7 @@ export const getEditCanvasConfigStyle = (canvas: EditCanvasConfigType) => {
       }
   return {
     position: 'relative' as const,
+    overflow: 'hidden' as const,
     width: canvas.width ? `${canvas.width || 100}px` : '100%',
     height: canvas.height ? `${canvas.height}px` : '100%',
     ...computedBackground
