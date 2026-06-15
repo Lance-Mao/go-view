@@ -222,7 +222,6 @@ onMounted(() => {
   @include background-image('background-point');
 
   @include goId('chart-edit-content') {
-    overflow: hidden;
     height: 100%;
     @extend .go-transition;
     @include fetch-theme('box-shadow');
