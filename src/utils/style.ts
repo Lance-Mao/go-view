@@ -19,15 +19,33 @@ export const animationsClass = (animations: string[]) => {
 export const getFilterStyle = (styles?: StylesType | EditCanvasConfigType) => {
   if (!styles || !styles.filterShow) return {}
   const { opacity, saturate, contrast, hueRotate, brightness } = styles
-  return {
-    opacity: opacity,
-    filter: `saturate(${saturate}) contrast(${contrast}) hue-rotate(${hueRotate}deg) brightness(${brightness})`
+  const result: Record<string, string | number> = {}
+
+  // opacity 为 1/undefined/null 时不设置，避免创建层叠上下文
+  if (opacity != null && opacity !== 1) {
+    result.opacity = opacity
   }
+
+  // 只收集非默认值的滤镜函数，避免无意义的 filter 计算
+  const filters: string[] = []
+  if (saturate != null && saturate !== 1) filters.push(`saturate(${saturate})`)
+  if (contrast != null && contrast !== 1) filters.push(`contrast(${contrast})`)
+  if (hueRotate != null && hueRotate !== 0) filters.push(`hue-rotate(${hueRotate}deg)`)
+  if (brightness != null && brightness !== 1) filters.push(`brightness(${brightness})`)
+  if (filters.length) {
+    result.filter = filters.join(' ')
+  }
+
+  return result
 }
 
 // * 变换
 export const getTransformStyle = (styles: StylesType) => {
   const { rotateZ, rotateX, rotateY, skewX, skewY } = styles
+  // 所有值都为 0/undefined/null 时不生成 transform，避免创建层叠上下文
+  if (![rotateZ, rotateX, rotateY, skewX, skewY].some(v => v)) {
+    return {}
+  }
   return {
     transform: `rotateZ(${rotateZ || 0}deg) rotateX(${rotateX || 0}deg) rotateY(${rotateY || 0}deg) skewX(${
       skewX || 0
@@ -39,6 +57,8 @@ export const getTransformStyle = (styles: StylesType) => {
 export const getBlendModeStyle = (styles: StylesType) => {
   if (!styles || !styles.filterShow) return {}
   const { blendMode } = styles
+  // normal 为默认值，不输出以避免创建层叠上下文
+  if (!blendMode || blendMode === 'normal') return {}
   return {
     'mix-blend-mode': blendMode
   }
