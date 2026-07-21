@@ -30,11 +30,11 @@ importers:
         specifier: ^4.14.184
         version: 4.17.17
       '@visactor/vchart':
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^2.1.4
+        version: 2.1.4
       '@visactor/vchart-theme':
         specifier: ^1.12.2
-        version: 1.12.2(@visactor/vchart@2.0.0)
+        version: 1.12.2(@visactor/vchart@2.1.4)
       animate.css:
         specifier: ^4.1.1
         version: 4.1.1
@@ -721,24 +721,28 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@resvg/resvg-js-linux-arm64-musl@2.4.1':
     resolution: {integrity: sha512-6mT0+JBCsermKMdi/O2mMk3m7SqOjwi9TKAwSngRZ/nQoL3Z0Z5zV+572ztgbWr0GODB422uD8e9R9zzz38dRQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@resvg/resvg-js-linux-x64-gnu@2.4.1':
     resolution: {integrity: sha512-60KnrscLj6VGhkYOJEmmzPlqqfcw1keDh6U+vMcNDjPhV3B5vRSkpP/D/a8sfokyeh4VEacPSYkWGezvzS2/mg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@resvg/resvg-js-linux-x64-musl@2.4.1':
     resolution: {integrity: sha512-0AMyZSICC1D7ge115cOZQW8Pcad6PjWuZkBFF3FJuSxC6Dgok0MQnLTs2MfMdKBlAcwO9dXsf3bv9tJZj8pATA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@resvg/resvg-js-win32-arm64-msvc@2.4.1':
     resolution: {integrity: sha512-76XDFOFSa3d0QotmcNyChh2xHwk+JTFiEQBVxMlHpHMeq7hNrQJ1IpE1zcHSQvrckvkdfLboKRrlGB86B10Qjw==}
@@ -948,35 +952,38 @@ packages:
     peerDependencies:
       '@visactor/vchart': '>=1.10.4'
 
-  '@visactor/vchart@2.0.0':
-    resolution: {integrity: sha512-F4WPcmQoHvrChCvTuKl0gr+F7Bp9imRqeZwFpDgC653NxSR4l8eML9+dMFkImUmzLT6VXgQk24ejzLe+x7aQtQ==}
+  '@visactor/vchart@2.1.4':
+    resolution: {integrity: sha512-NueAYq9hg9QHbsDK5WBZzOktQZiBdumMjE9mI5BKTJ9zzTOT+A2BfyK4xfFELojceXDwRs9sEH4xf93G2kexOw==}
 
-  '@visactor/vdataset@1.0.6':
-    resolution: {integrity: sha512-RhsC1JcrWGOOysBwGTHevn+VmOIDgaohFWNLkAAv4Qvd0Psdg8jH7VCP/Lp3HjV/vGBAg4ToL9ADfAjqT5SzcA==}
+  '@visactor/vdataset@1.0.23':
+    resolution: {integrity: sha512-zrLk9FBUWJoW6b30XnPKzXwAXl8USdLDfed6QZLsmdkylRU8V7yZeXE2aKwU8Lg1U4HmQngqmqOx7/QlbX44Tg==}
 
-  '@visactor/vlayouts@1.0.6':
-    resolution: {integrity: sha512-0HUoNos83LjOSXuJWscerFF6I0teLYDvDW6FIrm5w/b/q9CXvfeujQNm4pRR4AJgbND/bsJy5FAkPG2ne/rdvg==}
+  '@visactor/vlayouts@1.0.23':
+    resolution: {integrity: sha512-fK1f5LmuumhYanLArk5yrT4BZxu4IAmdc8WMwfB/KAvV+2dTPFuBUMWbWnDl0siQoU9SX9l/bLozUnI9n7BwBQ==}
 
-  '@visactor/vrender-animate@1.0.3':
-    resolution: {integrity: sha512-F6E4ngeFfP//MRd2P8uitDsO9q669bFiNnIbbS06+vjca893kfg2S4HHd6X0DaS9Efz66FINNxqUoDXRzl1gYA==}
+  '@visactor/vrender-animate@1.1.5':
+    resolution: {integrity: sha512-SpS+BGAgC6w2/Nk0laI+8j8Cj8of7xbdgoItv7ErcwT7/bMMZqdTh5hI7vM3addwcridYn4tUpKfXsjFT6cmPg==}
 
-  '@visactor/vrender-components@1.0.3':
-    resolution: {integrity: sha512-reQgGRW5/LMm2ArM1m8hM1jg+eDOU5dS/bg/uT3rqayl2ylfa/WHJwemileL6rQKLM+uFyH50RpGXVDV8PQv8w==}
+  '@visactor/vrender-components@1.1.5':
+    resolution: {integrity: sha512-xIEMeU/dV8x0bJ1xjbElhtoD+Sjet7Ahoq2Fm10p/VEf1ov9u4ZoGBZZaA/oZJsrvL6WchdZAHEM5TAmId5hBw==}
 
-  '@visactor/vrender-core@1.0.3':
-    resolution: {integrity: sha512-g+aPhX7WK/4FrDiAAX8hZRfoHtG2JmB2/73AaU8SMuWMYBFMPwTSBXQD5oI4vqeZ3/4p0yoSjXXaAL6t0d5ZTw==}
+  '@visactor/vrender-core@1.1.5':
+    resolution: {integrity: sha512-kaAHJlmitRNZYW6U3I+r3rdYmMcYLIQWuTxo4IiXF6KhmNeYmqa12LFV9J3fYEz9eb93SOYBGmjU467EkgU0XA==}
 
-  '@visactor/vrender-kits@1.0.3':
-    resolution: {integrity: sha512-RKO6zsYMU8ZhFgNa97lmwJEsm34MgV9CZLmDmMZ1Af9FkhwDYYaoMvZLHP47mjgQMGm4dnGUBfhPaZEqk31Dvw==}
+  '@visactor/vrender-kits@1.1.5':
+    resolution: {integrity: sha512-AI+N5EVYshJj0P8mnTSMgAsfACsGdX19cavCAUCS7iHec6nGX93qQg1zfH2oNZelwCAYpDvJY/yUzRYB/sozqA==}
 
-  '@visactor/vscale@1.0.6':
-    resolution: {integrity: sha512-E6ySrzOIyL85luy5dKPpKzaCjf/hkLFF/mAn37Lv8XJWhyxWjYO29GM7cIlqDNCKAY0qsONPnfmgdGX+Hoe5vg==}
+  '@visactor/vrender@1.1.5':
+    resolution: {integrity: sha512-iM1kJpvxK0PwBi6sxfxRsSdHJH02nn9pIQc4Kz6WAC4JRlqRjxGPZXa1Cn3FvpJPzUVPDDVY22Y83Hl/eSt5Mw==}
 
-  '@visactor/vutils-extension@2.0.0':
-    resolution: {integrity: sha512-2i+DTUPoKVEqEyfSIMBu0KPOXSGBcw4n4cixx65/kNGUTAXlbqX8Y5SBVVmFzeRmcSwUQq6SWrRO0zaPPa0hhg==}
+  '@visactor/vscale@1.0.23':
+    resolution: {integrity: sha512-XePhYuRoNAp+8MeSMuEOOvhVAlOwvM1sDT2yFxE6zdwVB2GjZk8mH+5N2xQGQWk75YmGJjlJASFtgwjlb1yWxw==}
 
-  '@visactor/vutils@1.0.6':
-    resolution: {integrity: sha512-87/AYLrjY1rtvIT0N/9S+sESialMQUKYv7MDjLjUo37u0hmeL/AwRSGBSvjxdxayKHOmdwUK1BLpQrDIrssKLg==}
+  '@visactor/vutils-extension@2.1.4':
+    resolution: {integrity: sha512-gyTxhrTN0Ybzis4FsHniTNQSKo9GWLT2f+0du3E6wEDQ/PijNRS6onkY3HyBXZbsnJlvk/sMZUqrtVJi3cTvzg==}
+
+  '@visactor/vutils@1.0.23':
+    resolution: {integrity: sha512-M8SLqgdHhKN8QmQKTWD1gzEaHptpIV9pvMYvC6+VeOsqYvZZ6UdhSCAAczTYVo+m/uwcEC2JHSUspbrs8rzlRQ==}
 
   '@vitejs/plugin-vue-jsx@3.1.0':
     resolution: {integrity: sha512-w9M6F3LSEU5kszVb9An2/MmXNxocAnUb3WhRr8bHlimhDrXNt6n6D2nJQR3UXpGlZHh/EsgouOHCsM8V3Ln+WA==}
@@ -2278,6 +2285,9 @@ packages:
   gsap@3.13.0:
     resolution: {integrity: sha512-QL7MJ2WMjm1PHWsoFrAQH/J8wUeqZvMtHO58qdekHpCfhvhSL4gSiz6vJf5EeMP0LOn3ZCprL2ki/gjED8ghVw==}
 
+  hachure-fill@0.5.2:
+    resolution: {integrity: sha512-3GKBOn+m2LX9iq+JC1064cSFprJY4jL1jCXTcpnfER5HYE2l/4EfWSGzkPa/ZDBmYI0ZOEj5VHV/eKnPGkHuOg==}
+
   handlebars@4.7.8:
     resolution: {integrity: sha512-vafaFqs8MZkRrSX7sFVUdo3ap/eNiLnb4IakshzvP56X5Nr1iGKAIqdX6tMlm6HcNRIkr6AxO5jFEoJzzpT8aQ==}
     engines: {node: '>=0.4.7'}
@@ -3282,8 +3292,8 @@ packages:
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
 
-  roughjs@4.5.2:
-    resolution: {integrity: sha512-2xSlLDKdsWyFxrveYWk9YQ/Y9UfK38EAMRNkYkMqYBJvPX8abCa9PN0x3w02H8Oa6/0bcZICJU+U95VumPqseg==}
+  roughjs@4.6.6:
+    resolution: {integrity: sha512-ZUz/69+SYpFN/g/lUlo2FXcIjRkSu3nDarreVdGGndHEBJ6cXPdKguS8JGxwj5HA5xIbVKSmLgr5b3AWxtRfvQ==}
 
   run-async@2.4.1:
     resolution: {integrity: sha512-tvVnVv01b8c1RrA6Ep7JkStj85Guv/YrMcwqYQnwjsAS2cTmmPGBBjAjpCW7RrSodNSoE2/qg9O4bceNvUuDgQ==}
@@ -4823,28 +4833,29 @@ snapshots:
 
   '@vicons/ionicons5@0.11.0': {}
 
-  '@visactor/vchart-theme@1.12.2(@visactor/vchart@2.0.0)':
+  '@visactor/vchart-theme@1.12.2(@visactor/vchart@2.1.4)':
     dependencies:
-      '@visactor/vchart': 2.0.0
+      '@visactor/vchart': 2.1.4
 
-  '@visactor/vchart@2.0.0':
+  '@visactor/vchart@2.1.4':
     dependencies:
-      '@visactor/vdataset': 1.0.6
-      '@visactor/vlayouts': 1.0.6
-      '@visactor/vrender-animate': 1.0.3
-      '@visactor/vrender-components': 1.0.3
-      '@visactor/vrender-core': 1.0.3
-      '@visactor/vrender-kits': 1.0.3
-      '@visactor/vscale': 1.0.6
-      '@visactor/vutils': 1.0.6
-      '@visactor/vutils-extension': 2.0.0
+      '@visactor/vdataset': 1.0.23
+      '@visactor/vlayouts': 1.0.23
+      '@visactor/vrender': 1.1.5
+      '@visactor/vrender-animate': 1.1.5
+      '@visactor/vrender-components': 1.1.5
+      '@visactor/vrender-core': 1.1.5
+      '@visactor/vrender-kits': 1.1.5
+      '@visactor/vscale': 1.0.23
+      '@visactor/vutils': 1.0.23
+      '@visactor/vutils-extension': 2.1.4
 
-  '@visactor/vdataset@1.0.6':
+  '@visactor/vdataset@1.0.23':
     dependencies:
       '@turf/flatten': 6.5.0
       '@turf/helpers': 6.5.0
       '@turf/rewind': 6.5.0
-      '@visactor/vutils': 1.0.6
+      '@visactor/vutils': 1.0.23
       d3-dsv: 2.0.0
       d3-geo: 1.12.1
       d3-hexbin: 0.2.2
@@ -4859,51 +4870,58 @@ snapshots:
       simplify-geojson: 1.0.5
       topojson-client: 3.1.0
 
-  '@visactor/vlayouts@1.0.6':
+  '@visactor/vlayouts@1.0.23':
     dependencies:
       '@turf/helpers': 6.5.0
       '@turf/invariant': 6.5.0
-      '@visactor/vscale': 1.0.6
-      '@visactor/vutils': 1.0.6
+      '@visactor/vscale': 1.0.23
+      '@visactor/vutils': 1.0.23
       eventemitter3: 4.0.7
 
-  '@visactor/vrender-animate@1.0.3':
+  '@visactor/vrender-animate@1.1.5':
     dependencies:
-      '@visactor/vrender-core': 1.0.3
-      '@visactor/vutils': 1.0.6
+      '@visactor/vrender-core': 1.1.5
+      '@visactor/vutils': 1.0.23
 
-  '@visactor/vrender-components@1.0.3':
+  '@visactor/vrender-components@1.1.5':
     dependencies:
-      '@visactor/vrender-animate': 1.0.3
-      '@visactor/vrender-core': 1.0.3
-      '@visactor/vrender-kits': 1.0.3
-      '@visactor/vscale': 1.0.6
-      '@visactor/vutils': 1.0.6
+      '@visactor/vrender-animate': 1.1.5
+      '@visactor/vrender-core': 1.1.5
+      '@visactor/vrender-kits': 1.1.5
+      '@visactor/vscale': 1.0.23
+      '@visactor/vutils': 1.0.23
 
-  '@visactor/vrender-core@1.0.3':
+  '@visactor/vrender-core@1.1.5':
     dependencies:
-      '@visactor/vutils': 1.0.6
+      '@visactor/vutils': 1.0.23
       color-convert: 2.0.1
 
-  '@visactor/vrender-kits@1.0.3':
+  '@visactor/vrender-kits@1.1.5':
     dependencies:
       '@resvg/resvg-js': 2.4.1
-      '@visactor/vrender-core': 1.0.3
-      '@visactor/vutils': 1.0.6
+      '@visactor/vrender-core': 1.1.5
+      '@visactor/vutils': 1.0.23
       gifuct-js: 2.1.2
       lottie-web: 5.13.0
-      roughjs: 4.5.2
+      roughjs: 4.6.6
 
-  '@visactor/vscale@1.0.6':
+  '@visactor/vrender@1.1.5':
     dependencies:
-      '@visactor/vutils': 1.0.6
+      '@visactor/vrender-animate': 1.1.5
+      '@visactor/vrender-components': 1.1.5
+      '@visactor/vrender-core': 1.1.5
+      '@visactor/vrender-kits': 1.1.5
 
-  '@visactor/vutils-extension@2.0.0':
+  '@visactor/vscale@1.0.23':
     dependencies:
-      '@visactor/vdataset': 1.0.6
-      '@visactor/vutils': 1.0.6
+      '@visactor/vutils': 1.0.23
 
-  '@visactor/vutils@1.0.6':
+  '@visactor/vutils-extension@2.1.4':
+    dependencies:
+      '@visactor/vdataset': 1.0.23
+      '@visactor/vutils': 1.0.23
+
+  '@visactor/vutils@1.0.23':
     dependencies:
       '@turf/helpers': 6.5.0
       '@turf/invariant': 6.5.0
@@ -6441,6 +6459,8 @@ snapshots:
 
   gsap@3.13.0: {}
 
+  hachure-fill@0.5.2: {}
+
   handlebars@4.7.8:
     dependencies:
       minimist: 1.2.8
@@ -7490,8 +7510,9 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  roughjs@4.5.2:
+  roughjs@4.6.6:
     dependencies:
+      hachure-fill: 0.5.2
       path-data-parser: 0.1.0
       points-on-curve: 0.2.0
       points-on-path: 0.2.1
