@@ -203,5 +203,8 @@ QQ 群：687586375
 <p align="center">
   <img width="100%" src="readme/go-view-pro-ai.png" alt="GoViewProAI" style="border-radius: 4px" />
 </p>
+<p align="center">
+  <img width="100%" src="readme/GoViewPro-svip.png" alt="GoViewProAI" style="border-radius: 4px" />
+</p>
 
 ![渲染海报](readme/logo-poster.png)
