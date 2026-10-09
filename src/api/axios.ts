@@ -38,8 +38,8 @@ axiosInstance.interceptors.request.use(
     config.headers[userInfo[SystemStoreUserInfoEnum.TOKEN_NAME] || 'token'] =  userInfo[SystemStoreUserInfoEnum.USER_TOKEN] || ''
     return config
   },
-  (err: AxiosError) => {
-    Promise.reject(err)
+  (error: AxiosError) => {
+    return Promise.reject(error)
   }
 )
 
@@ -81,12 +81,10 @@ axiosInstance.interceptors.response.use(
     switch (status) {
       case 401:
         routerTurnByName(PageEnum.BASE_LOGIN_NAME)
-        Promise.reject(err)
-        break
+        return Promise.reject(err)
 
       default:
-        Promise.reject(err)
-        break
+        return Promise.reject(err)
     }
   }
 )
