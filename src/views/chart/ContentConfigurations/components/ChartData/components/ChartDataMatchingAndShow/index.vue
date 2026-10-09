@@ -55,7 +55,13 @@
               </n-space>
             </td>
             <td v-else>
-              <n-input v-model:value="item.mapping" type="text" size="small" placeholder="小" />
+              <n-input
+                v-model:value="item.mapping"
+                type="text"
+                size="small"
+                placeholder="输入字段"
+                @change="(val: string) => (targetData.option[item.field] = val)"
+              />
             </td>
             <!-- <td>
               <n-space style="width: 70px" :size="4">
@@ -220,7 +226,7 @@ const editorCode = ref('')
 const fieldList = ref<
   Array<{
     field: string
-    mapping: string[]
+    mapping: string | string[]
     result: DataResultEnum
   }>
 >([])
